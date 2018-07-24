@@ -1,0 +1,28 @@
+<div class="card card-body">
+    <h3>Register</h3>
+    <form >
+      <div class="form-group">
+        <label for="title">Username</label>
+        <input type="text" class="form-control" name="username" ng-model="userReg.username" required>
+
+        <label for="details">Password</label>
+        <input type="text" class="form-control" name="password" ng-model="userReg.password" required></input>
+
+        <label for="details">Email</label>
+        <input type="text" class="form-control" name="Email" ng-model="userReg.email" required></input>
+      
+        <label for="details">Location</label>
+        <input type="text" class="form-control" name="Location" ng-model="userReg.location" required></input>
+      
+        <label for="details">Phone number</label>
+        <input type="text" class="form-control" name="Phone" ng-model="userReg.phone" required></input>
+        
+        <label for="exampleFormControlSelect1">User Type</label>
+        <select class="form-control mb-3" id="exampleFormControlSelect1" ng-model="userReg.usertype">
+            <option>Job seeker</option>
+            <option>Company</option>
+    </select>
+
+      <button type="submit" class="btn btn-primary" ng-click="register()">Submit</button>
+    </form>
+  </div>

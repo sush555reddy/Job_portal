@@ -1,0 +1,22 @@
+<div class="card card-body">
+    <h3>Add Job</h3>
+    <form>
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" name="title" ng-model="jobform.title" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea class="form-control" name="description" ng-model="jobform.description" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="title">Keyword</label>
+        <input type="text" class="form-control" name="keywords" ng-model="jobform.keyword" required>
+      </div>
+      <div class="form-group">
+        <label for="title">Location</label>
+        <input type="text" class="form-control" name="location" ng-model="jobform.location" required>
+      </div>
+      <button type="submit" class="btn btn-primary" ng-click="addJob()">Submit</button>
+    </form>
+  </div>

@@ -1,0 +1,11 @@
+<div>
+    <div class="card" ng-repeat="job in jobs">
+    <div class="card-body">
+        <h5>{{job.title}}</h5>
+            <h6>{{job.location}}</h6>
+            <p>{{job.description}}</p>
+            <button id="{{job._id}}" class="btn mr-3" ng-Class="user.savedjobs.includes(job._id)?'btn btn-primary':'btn'" ng-click="save($event)">Save</button>
+            <button id="{{job._id}}" class="btn" ng-Class="user.appliedjobs.includes(job._id)?'btn btn-primary':'btn'" ng-click="apply($event)" >Apply</button>
+        </div>
+    </div>
+</div>
